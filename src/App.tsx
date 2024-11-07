@@ -4,11 +4,21 @@ import Floor from "./pages/Floor/Floor";
 import PrivateRoute from "./utils/PrivateRoute";
 import Layout from "./components/Layout/Layout";
 import Forbidden from "./pages/Forbidden/Forbidden";
+import { Children } from "react";
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<Reception/>
+    element:<Layout/>,
+    children:[{
+      path:"/floor/:index",
+      element:<Floor/> 
+    },
+    {
+      path:"/",
+      element:<Reception/>
+    }
+  ]
   },
  
 
