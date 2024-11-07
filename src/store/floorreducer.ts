@@ -11,3 +11,5 @@ export const floorSlice = createSlice({
     }
 
 })
+
+export default floorSlice.actions.changeAccess

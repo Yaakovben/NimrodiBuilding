@@ -15,6 +15,7 @@ const Layout: React.FC = () => {
   const { getFloorByIndex } = useBuildingData();
 
   return (
+    
     <div className="layout-page">
       <nav className="navbar">
         <h1>מגדל נמרודי</h1>
